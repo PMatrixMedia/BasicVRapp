@@ -7,16 +7,16 @@
   <body>
     <!-- Attachment point for your app -->
     <div id="container"></div>
-    <script src="./client.bundle?platform=vr"></script>
+    <script src="/dist/client.bundle.js" type="text/javascript"></script>
     <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
     <script>
       // Initialize the React 360 application
       React360.init(
-        'index.bundle?platform=vr&dev=true',
+        './../dist/index.bundle.js',
         document.getElementById('container'),
         {
           bridgeFile: 'NonBlobBridge.js',
-          assetRoot: 'static_assets/',
+          assetRoot: '/dist/static_assets/',
         }
       );
     </script>
