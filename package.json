@@ -24,12 +24,7 @@
     "react-test-renderer": "16.0.0",
     "xopen": "1.0.0"
   },
-  "scripts": {
-    "start": "node scrip ts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
-  },
-  "jest": {
+    "jest": {
     "preset": "react-360"
   }
 }
