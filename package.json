@@ -6,7 +6,7 @@
     "start": "node node_modules/react-360/scripts/packager.js",
     "bundle": "node node_modules/react-360/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
-    "builds": [{ "src": "server.js", "use": "@now/node" }],  
+    "builds": { "src": "server.js", "use": "@now/node" },  
     "devtools": "react-devtools",
     "test": "jest"
   },
