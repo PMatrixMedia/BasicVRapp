@@ -16,7 +16,7 @@ function init(bundle, parent, options = {}) {
 
   const r360 = new ReactInstance(bundle, parent, {
     // Add custom options here
-    fullScreen: true,
+    fullScreen: false,
     ...options,
   });
 
