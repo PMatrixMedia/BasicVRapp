@@ -22,9 +22,9 @@ const DATA_BASE = [
     type: 'photo',
     source: asset('360_world.jpg'),
     list: [
-      'Car',
-      'Road',
-      'Child',
+      'menu',
+      'item',
+      'buttonitems',
     ]
   },
   {
