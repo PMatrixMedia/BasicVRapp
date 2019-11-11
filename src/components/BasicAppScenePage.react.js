@@ -24,7 +24,7 @@ const DATA_BASE = [
     list: [
       'menu',
       'item',
-      'buttonitems',
+      'button-items',
     ]
   },
   {
@@ -39,7 +39,8 @@ const DATA_BASE = [
   {
     type: 'video',
     source: {url: asset('video360.mp4').uri},
-    /* If you want to have muliple format of source
+    audio: asset('rollercoaster.wav'),
+    /* If you want to have multiple format of source
      and let browser choose the supported one
      try the following:
     source: [
@@ -51,9 +52,9 @@ const DATA_BASE = [
     ],
     */
     list: [
-      'Building',
-      'Tree',
-      'Road',
+      'Rollercoaster',
+      'ThemePark',
+      'Pumpkin',
     ]
   },
 ];
@@ -92,7 +93,7 @@ class BasicAppScenePage extends React.Component {
       // play background 360 video
       // Two steps:
       // 1. play video on the player
-      // 2. set enviroment to the player
+      // 2. set environment to the player
       this._player.play({
         source: data.source,
         // un-muted won't work with Android right now
